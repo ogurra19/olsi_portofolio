@@ -8,7 +8,7 @@
 
 /* Body dhe Background */
 body {
-    background: url('foto.PNG') no-repeat center center fixed;
+    background-color: gray;
     background-size: cover;
     color: white;
 }
