@@ -1,0 +1,215 @@
+/* Përdorim të përgjithshëm për faqen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body dhe Background */
+body {
+    background: url('fotot/foto.PNG') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Header dhe navigimi */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f1c40f; /* Ndryshon ngjyrën kur kalon mbi to */
+    text-shadow: 0 0 10px #f1c40f; /* Hija për efektin e hover-it */
+}
+
+/* Seksioni i Home */
+.home {
+    padding: 150px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Gjysmë transparencë për lehtësimin e lexueshmërisë */
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Seksioni About */
+.about {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Lidhjet sociale (Instagram dhe Facebook) */
+
+
+/* Seksioni i Projects */
+.projects {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 3rem;
+}
+
+.projects p {
+    font-size: 1.2rem;
+}
+
+/* Seksioni i Education */
+.education {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 3rem;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.education li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Seksioni i Contact */
+.contact {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact input, .contact textarea, .contact p  {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.contact button  {
+    background-color: #f1c40f;
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #5b1212;
+}
+
+/* Seksioni i Blog */
+.blog {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 3rem;
+}
+
+.blog article {
+    margin: 30px 0;
+}
+
+.blog h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.blog img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .home h1, .about h2, .projects h2, .education h2, .contact h2, .blog h2 {
+        font-size: 2.5rem;
+    }
+
+    .home p, .about p, .projects p, .education p, .contact p, .blog p {
+        font-size: 1.2rem;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+    
+    .contact input, .contact textarea, .contact button {
+        font-size: 1rem;
+    }
+}
+
